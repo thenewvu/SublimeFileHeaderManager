@@ -1,0 +1,16 @@
+{
+	"old_header_patterns":
+	{
+		".cpp": { "begin": "/*", "end": "*/\n"},
+		".h":   { "begin": "/*", "end": "*/\n"},
+		".py":  { "begin": "'''", "end": "'''\n"}
+	},
+	"new_header_patterns":
+	{
+		".cpp": { "begin": "/*", "end": "*/"},
+		".h":   { "begin": "/*", "end": "*/"},
+		".py":  { "begin": "'''", "end": "'''"}
+	},
+	"default_header_template": "	This file belongs to Vu. Le Thanh (thenewvu@gmail.com). All rights reserved!",
+	"ignored_dirnames": ["3rd"]
+}

@@ -1,0 +1,15 @@
+[
+	{
+		"caption": "-",
+		"id": "side-bar-end-separator"
+	},
+	{
+		"caption": "Update File Header",
+		"command": "update_file_header",
+		"args": { "paths": [] }
+	},
+	{
+		"caption": "-",
+		"id": "side-bar-end-separator"
+	}
+]
