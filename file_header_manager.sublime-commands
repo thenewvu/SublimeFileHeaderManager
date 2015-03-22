@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "Update File Header",
+        "command": "update_file_header_in_current_file",
+    }
+]

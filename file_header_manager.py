@@ -1,3 +1,6 @@
+'''
+	This file belongs to Vu. Le Thanh (thenewvu@gmail.com). All rights reserved!
+'''
 import sublime
 import sublime_plugin
 import os
@@ -90,3 +93,9 @@ class UpdateFileHeaderCommand(sublime_plugin.TextCommand):
 		settings = sublime.load_settings("file_header_manager.sublime-settings")
 		for path in paths:
 			threading.Thread(target=update_file_header_in_path, args=(path,)).start()
+
+class UpdateFileHeaderInCurrentFileCommand(sublime_plugin.TextCommand):
+	def run(self, edit):
+		global settings
+		settings = sublime.load_settings("file_header_manager.sublime-settings")
+		threading.Thread(target=update_file_header_in_path, args=(self.view.file_name(),)).start()
